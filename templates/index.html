@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spelling Correction App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+
+
+</head>
+<body class="maincon">
+
+	<header>
+		<div class="jumbotron text-center">
+		<h1>OCR Post Correction</h1>
+		<p class="text-muted font-weight-bold">Correct your Spelling Mistakes </p>
+		</div>
+	</header>
+
+	<div class="container p-3 my-3 text-black text-justify" >
+		<div class="row">
+		<div class="col-xl-12">
+		<div class="form-group">
+			<h2> </h2>
+
+				<a href="{{ url_for('dicitonarybased') }}"><input type="submit" class="btn btn-primary font-weight-bold text-black" value="Correct Spellings by dictionary"/></a>
+				<a href="{{ url_for('wordfrequency') }}"><input type="submit" class="btn btn-primary font-weight-bold text-black" value="Correct Spellings by wordfrequency"/></a>
+				<a href="{{ url_for('NGram') }}"><input type="submit" class="btn btn-primary font-weight-bold text-black" value="Correct Spellings by NGram"/></a>
+				<a href="{{ url_for('majorityvoting') }}"><input type="submit" class="btn btn-primary font-weight-bold text-black" value="Correct Spellings by majority voting"/></a>
+
+		</div>	
+		</div>	
+		</div>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+</body>
+</html>
+

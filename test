@@ -1,0 +1,8 @@
+import jamspell
+
+corrected=""
+jsp = jamspell.TSpellCorrector()
+assert jsp.LoadLangModel('en.bin')
+a='i will vist londn'
+corrected=(jsp.FixFragment(a))
+print(corrected)
